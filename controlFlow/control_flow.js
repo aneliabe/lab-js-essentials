@@ -50,3 +50,19 @@ let isAuthenticated = true;
 let authenticationStatus = isAuthenticated ? "Authenticated" : "Not authenticated"
 
 console.log("Authentication Status:", authenticationStatus);
+
+let user = "Employee";
+let accessAuthorization;
+
+if (user === "Employee") {
+    accessAuthorization = "Access to Dietary Services";
+} else if (user === "Enrolled Member") {
+    accessAuthorization = "access to Dietary Services and one-on-one interaction with a dietician.";
+} else if (user === "Subscriber") {
+    accessAuthorization = "Partial access to facilitate Dietary Services";
+} else {
+    accessAuthorization = "No access granted";
+}
+
+
+console.log("Access Level:", accessAuthorization);
